@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Iron Lady - Leadership Programs</title>
+    <!-- Import Google Fonts for various sections -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600&family=Nunito:wght@500&family=Montserrat:wght@500;600;700;900&family=Poppins:wght@500;600&family=Roboto:ital,wght@0,400;1,400&family=Inter:wght@400&family=Oswald:wght@500;600&family=Raleway:wght@500;600&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <script src="{{ url_for('static', filename='js/chatbot.js') }}" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Programs &#x25BE;</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Leadership Essentials Program</a></li>
+                        <li><a href="#">100 Board Members Program</a></li>
+                        <li><a href="#">Master of Business Warfare</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Impact</a></li>
+                <li class="dropdown">
+                    <a href="#">About Us &#x25BE;</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Mission</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Mentors</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Latest</a></li>
+                <li class="dropdown">
+                    <a href="#">MasterClass &#x25BE;</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Upcoming</a></li>
+                        <li><a href="#">Archive</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <a href="tel:+916360823123" class="phone-link">📞 +91 - 6360823123</a>
+            <img src="{{ url_for('static', filename='images/ironlady-logo.png') }}" alt="Iron Lady Logo" class="logo" />
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+    </section>
+
+    <!-- Why Choose Iron Lady -->
+    <section class="why-choose">
+        <h2 class="exo-black">Why Choose Iron Lady</h2>
+        <div class="features">
+            <div class="feature-card">
+                <h3 class="exo-bold">Win with Business War Tactics</h3>
+                <p>Master strategies to excel in competitive business environments.</p>
+            </div>
+            <div class="feature-card">
+                <h3 class="exo-bold">Achieve Breakthrough Fast-track Growth</h3>
+                <p>Accelerate your career and personal development with actionable insights.</p>
+            </div>
+            <div class="feature-card">
+                <h3 class="exo-bold">Join 78,000+ Women Leaders’ Ecosystem</h3>
+                <p>Connect with a powerful network of women leaders.</p>
+            </div>
+            <div class="feature-card">
+                <h3 class="exo-bold">Develop an Unapologetic Winning Mindset</h3>
+                <p>Build confidence, resilience, and leadership presence.</p>
+            </div>
+            <div class="feature-card">
+                <h3 class="exo-bold">Learn from Global Practitioners' Expertise</h3>
+                <p>Gain insights from industry leaders around the world.</p>
+            </div>
+        </div>
+        <button class="btn-secondary">Explore Programs</button>
+    </section>
+
+    <!-- What We Offer -->
+    <section class="what-we-offer">
+        <h2 class="exo-black">What We Offer</h2>
+        <div class="offerings">
+            <div class="offering">
+                <h3 class="exo-bold">Leadership Essentials Program</h3>
+                <p>Are you often asked - "Learn to BALANCE? Do you feel "Guilty" about being Ambitious? Learn the art of maximizing, shameless pitching and deal with office politics and biases. Be unapologetically ambitious.</p>
+                <a href="#" class="know-more">Know more &rarr;</a>
+            </div>
+            <div class="offering">
+                <h3 class="exo-bold">100 Board Members Program</h3>
+                <p>Have you been feeling stuck at the same level in your career and no tactics are working? Enrol for 100 Board Member Program to learn innovative techniques to fasttrack your overdue growth.</p>
+                <a href="#" class="know-more">Know more &rarr;</a>
+            </div>
+            <div class="offering">
+                <h3 class="exo-bold">Master of Business warfare</h3>
+                <p>Are you committed to reach the C-suite, but don’t know how? Is 1+ Crore Income your dream band? Join our Master of Business Warfare program to understand cutting-edge business warfare tactics for these breakthroughs in your career.</p>
+                <a href="#" class="know-more">Know more &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who is it for? -->
+    <section class="who-is-it-for">
+        <h2 class="exo-black">Who Is It For?</h2>
+        <div class="audience">
+            <div class="audience-member">
+                <p class="exo-bold">Professionals</p>
+                <p>Aspiring for career growth and leadership opportunities.</p>
+            </div>
+            <div class="audience-member">
+                <p class="exo-bold">Entrepreneurs</p>
+                <p>Businesswomen, self-employed individuals, and startup founders looking to scale and succeed.</p>
+            </div>
+            <div class="audience-member">
+                <p class="exo-bold">Women Seeking Career Change</p>
+                <p>Women aiming to restart or pivot their careers successfully.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <img src="{{ url_for('static', filename='images/ironlady-logo.png') }}" alt="Iron Lady Footer Logo" />
+            <p>Elevating a million women to the top</p>
+            <div class="footer-links">
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Cancellation policy</a>
+                <a href="#">Privacy policy</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Careers</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot Icon -->
+    <div id="chatbot-icon" title="Chat with Iron Lady">
+        <img src="{{ url_for('static', filename='images/bcd.png') }}" alt="Chatbot Icon" />
+    </div>
+
+    <!-- Chatbot Interface -->
+    <div id="chatbot-interface" class="hidden">
+        <div id="chatbot-header">
+            <span>Iron Lady Chatbot</span>
+            <button id="chatbot-close">✖</button>
+        </div>
+        <div id="chatbot-messages"></div>
+        <form id="chatbot-form">
+            <input type="text" id="chatbot-input" placeholder="Type your message..." autocomplete="off" required />
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
