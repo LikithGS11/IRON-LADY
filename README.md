@@ -133,13 +133,3 @@ CHATBOT/
 This project is for educational and demonstration purposes. Please adhere to the Google Gemini API terms of service.
 
 ---
-
-<div align="center">
-  <img src="https://lottie.host/7d0e7b2e-ironlady-chatbot-ani.json" alt="Chatbot Animation" height="100"/>
-  <img src="https://lottie.host/7d0e7b2e-women-leadership-ani.json" alt="Leadership Animation" height="100"/>
-  <img src="https://lottie.host/7d0e7b2e-ai-ani.json" alt="AI Animation" height="100"/>
-</div>
-
----
-
-> Made with ❤️ by the Iron Lady team
