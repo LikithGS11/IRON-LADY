@@ -1,22 +1,34 @@
-# Iron Lady Chatbot Web Application
+# 🚀 Iron Lady Chatbot Web Application ![IRON LADY](https://img.shields.io/badge/IRON%20LADY-AI%20Chatbot-%23e95420?logo=python&logoColor=white&style=for-the-badge) ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge&logo=github)
 
-## Overview
+<div align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="Python" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" height="40" alt="Flask" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="JavaScript" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="HTML5" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="CSS3" />
+</div>
 
-Iron Lady is a Flask-based web application featuring an AI-powered chatbot designed to assist users with information about leadership programs for women. The chatbot leverages Google's Gemini AI for intelligent responses and provides a user-friendly interface for inquiries related to Iron Lady's mission, programs, duration, mode, certificates, and mentors.
+---
 
-The application includes a responsive website with sections highlighting the organization's offerings, target audience, and features. The chatbot is integrated into the website for seamless user interaction.
+## ✨ Overview
 
-## Features
+**Iron Lady** is a modern web application powered by Flask and enhanced with an AI chatbot based on Google Gemini. It’s designed to assist, inspire, and inform users about leadership programs for women, all through a sleek, animated, responsive interface.
 
-- **AI-Powered Chatbot**: Uses Google Gemini API for generating responses based on predefined knowledge about Iron Lady.
-- **Fallback Responses**: Handles common queries with static responses for reliability.
-- **Responsive Web Interface**: Modern, animated website with sections for programs, audience, and more.
-- **Flask Backend**: RESTful API endpoint for chatbot interactions.
-- **Testing**: Includes pytest-based unit tests for the Flask application.
+---
 
-## Project Structure
+## 🎯 Features
 
-```
+- 🤖 **AI Chatbot**: Powered by Google Gemini API for dynamic, helpful responses.
+- 🔄 **Fallback Handling**: Answers common queries with reliable static responses.
+- 💻 **Responsive Design**: Animated sections for programs, audience, and more.
+- ⚡ **Flask Backend**: RESTful API for real-time chatbot interactions.
+- 🧪 **Testing**: Pytest-based unit tests ensure robust performance.
+
+---
+
+## 📁 Project Structure
+
+```text
 CHATBOT/
 ├── app.py                 # Main Flask application
 ├── ironlady.py            # Standalone chatbot script
@@ -24,97 +36,110 @@ CHATBOT/
 ├── requirements.txt       # Python dependencies
 ├── static/
 │   ├── css/
-│   │   └── style.css      # Stylesheet for the website
+│   │   └── style.css
 │   ├── js/
-│   │   └── chatbot.js     # JavaScript for chatbot frontend
-│   └── images/            # Static images (logos, icons, etc.)
+│   │   └── chatbot.js
+│   └── images/            # Logos, icons, etc.
 ├── templates/
-│   └── index.html         # HTML template for the homepage
-└── README.md              # This file
+│   └── index.html
+└── README.md
 ```
 
-## Installation
+---
 
-1. **Clone or Download the Repository**:
-   - Ensure you have the project files in your working directory.
+## ⚙️ Installation
 
-2. **Install Python Dependencies**:
-   - Make sure you have Python 3.7+ installed.
-   - Install the required packages using pip:
-     ```
-     pip install -r requirements.txt
-     ```
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/LikithGS11/IRON-LADY.git
+   cd IRON-LADY
+   ```
 
-3. **Set Up Environment Variables**:
-   - Create a `.env` file in the root directory.
-   - Add your Google Gemini API key:
+2. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Set Up Environment Variables**
+   - Create a `.env` file in the root directory:
      ```
      GEMINI_API_KEY=your_api_key_here
      ```
-   - Obtain an API key from [Google AI Studio](https://makersuite.google.com/app/apikey).
+   - Get your API key from [Google AI Studio](https://makersuite.google.com/app/apikey).
 
-## Usage
+---
 
-### Running the Web Application
+## 🚦 Usage
 
-1. Navigate to the project directory.
-2. Run the Flask application:
-   ```
-   python app.py
-   ```
-3. Open your web browser and go to `http://127.0.0.1:5000/` to access the website.
-4. Click the chatbot icon in the bottom-right corner to interact with the chatbot.
-
-### Running the Standalone Chatbot
-
-- Execute the standalone script:
+- **Run the Web Application**
+  ```bash
+  python app.py
   ```
+  Visit [http://127.0.0.1:5000/](http://127.0.0.1:5000/) and click the chatbot icon in the corner!
+
+- **Run the Standalone Chatbot**
+  ```bash
   python ironlady.py
   ```
-- Type your queries in the console. Type 'exit' or 'bye' to quit.
 
-### Running Tests
-
-- Run the unit tests using pytest:
-  ```
+- **Run Tests**
+  ```bash
   pytest test_app.py
   ```
 
-## API Endpoint
+---
 
-- **POST /chatbot**: Accepts JSON with a 'message' field and returns a JSON response with the chatbot's reply.
-  - Example request:
+## 📡 API Endpoint
+
+- **POST /chatbot**
+  - Request:
     ```json
-    {
-      "message": "What is Iron Lady?"
-    }
+    { "message": "What is Iron Lady?" }
     ```
-  - Example response:
+  - Response:
     ```json
-    {
-      "response": "Iron Lady is a leadership and transformation organization..."
-    }
+    { "response": "Iron Lady is a leadership and transformation organization..." }
     ```
 
-## Dependencies
+---
 
-- **Flask**: Web framework for the application.
-- **python-dotenv**: For loading environment variables.
-- **google-generativeai**: Google's Generative AI library for Gemini API.
-- **google-api-core**: Core library for Google APIs.
-- **pytest**: Testing framework for unit tests.
+## 🛠️ Built With
 
-## Notes
+![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/-Flask-000?logo=flask)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=css3)
+![Google Gemini](https://img.shields.io/badge/-Google%20Gemini-4285F4?logo=google)
 
-- The standalone script (`ironlady.py`) has a hardcoded API key for demonstration purposes. In production, use environment variables as in `app.py`.
-- Ensure your API key has the necessary permissions for the Gemini API.
-- The website uses Google Fonts for typography and includes animations for a better user experience.
+---
 
-## Contributing
+## 💡 Notes
 
-- Feel free to fork the repository and submit pull requests for improvements.
-- Report issues or suggest features via GitHub issues.
+- The standalone script (`ironlady.py`) uses a hardcoded API key for demonstration—use environment variables in production!
+- The web UI leverages Google Fonts, Lottie animations, and visually engaging sections for a great user experience.
 
-## License
+---
 
-This project is for educational and demonstration purposes. Please check the terms of service for the Google Gemini API.
+## 🤝 Contributing
+
+- Fork, star, and submit pull requests for enhancements!
+- Report bugs or suggest features via GitHub issues.
+
+---
+
+## 📄 License
+
+This project is for educational and demonstration purposes. Please adhere to the Google Gemini API terms of service.
+
+---
+
+<div align="center">
+  <img src="https://lottie.host/7d0e7b2e-ironlady-chatbot-ani.json" alt="Chatbot Animation" height="100"/>
+  <img src="https://lottie.host/7d0e7b2e-women-leadership-ani.json" alt="Leadership Animation" height="100"/>
+  <img src="https://lottie.host/7d0e7b2e-ai-ani.json" alt="AI Animation" height="100"/>
+</div>
+
+---
+
+> Made with ❤️ by the Iron Lady team
